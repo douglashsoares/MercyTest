@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CriarConta">
+
+    <TextView
+        android:id="@+id/txtCriarConta"
+        android:text="CRIE SUA CONTA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/edtCriarNome"
+        />
+    <TextView
+        android:id="@+id/txtCriarNome"
+        android:text="Nome:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCriarConta"
+        app:layout_constraintEnd_toStartOf="@+id/edtCriarNome"
+        app:layout_constraintBottom_toTopOf="@+id/txtCriarLogin"
+        />
+
+    <EditText
+        android:id="@+id/edtCriarNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/txtCriarNome"
+        app:layout_constraintTop_toBottomOf="@+id/txtCriarConta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/edtCriarLogin"
+        />
+    <TextView
+        android:id="@+id/txtCriarLogin"
+        android:text="Login:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCriarNome"
+        app:layout_constraintEnd_toStartOf="@+id/edtCriarLogin"
+        app:layout_constraintBottom_toTopOf="@+id/txtCriarSenha"
+        />
+
+    <EditText
+        android:id="@+id/edtCriarLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/txtCriarLogin"
+        app:layout_constraintTop_toBottomOf="@+id/edtCriarNome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/edtCriarSenha"
+        />
+
+    <TextView
+        android:id="@+id/txtCriarSenha"
+        android:text="Senha:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCriarLogin"
+        app:layout_constraintEnd_toStartOf="@+id/edtCriarSenha"
+        app:layout_constraintBottom_toTopOf="@+id/txtCriarEmail"
+        />
+
+    <EditText
+        android:id="@+id/edtCriarSenha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/txtCriarSenha"
+        app:layout_constraintTop_toBottomOf="@+id/edtCriarLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/edtCriarEmail"
+        />
+
+    <TextView
+        android:id="@+id/txtCriarEmail"
+        android:text="Email:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCriarSenha"
+        app:layout_constraintEnd_toStartOf="@+id/edtCriarEmail"
+        app:layout_constraintBottom_toTopOf="@+id/btnCriarConta"
+        />
+
+    <EditText
+        android:id="@+id/edtCriarEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/txtCriarEmail"
+        app:layout_constraintTop_toBottomOf="@+id/edtCriarSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnCriarConta"
+        />
+
+    <Button
+        android:id="@+id/btnCriarConta"
+        android:text="CRIAR CONTA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edtCriarEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name= "colorPrimary">#6200EE</color>
+    <color name= "colorPrimaryDark">#3700B3</color>
+    <color name= "colorAccent">#03DAC5</color>
+    <color name= "egg_shell">#ebe9d7</color>
+    <color name= "greeny_blue">#57bbbc</color>
+    <color name= "white">#ffffff</color>
+    <color name= "charcoal_grey">#383743</color>
+</resources>
