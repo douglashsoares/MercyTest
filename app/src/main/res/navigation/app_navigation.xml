@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/primeiraFragment">
+
+    <fragment
+        android:id="@+id/AFragment"
+        android:name="com.example.mercytest.AFragment"
+        android:label="fragment_a"
+        tools:layout="@layout/fragment_a" />
+    <fragment
+        android:id="@+id/BFragment"
+        android:name="com.example.mercytest.BFragment"
+        android:label="fragment_b"
+        tools:layout="@layout/fragment_b" />
+    <fragment
+        android:id="@+id/primeiraFragment"
+        android:name="com.example.mercytest.PrimeiraFragment"
+        android:label="fragment_primeira"
+        tools:layout="@layout/fragment_primeira" >
+        <action
+            android:id="@+id/action_primeiraFragment_to_segundaFragment"
+            app:destination="@id/segundaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/segundaFragment"
+        android:name="com.example.mercytest.SegundaFragment"
+        android:label="fragment_segunda"
+        tools:layout="@layout/fragment_segunda" >
+        <action
+            android:id="@+id/action_segundaFragment_to_AFragment"
+            app:destination="@id/AFragment" />
+        <action
+            android:id="@+id/action_segundaFragment_to_BFragment"
+            app:destination="@id/BFragment" />
+    </fragment>
+</navigation>

@@ -3,4 +3,6 @@
     <string name="Bem_Vindo">Bem Vindo Ao Empresas</string>
     <string name="TextoInicio">Lorem ipsum dolor sit amet,
         contetur adipiscing elit. Nunc accumsan.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
